@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Arya Mandala</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    :root {
+      --biru: #3A8DFF;
+      --putih: #f1f1f1;
+      --orange: #FF6F00;
+      --abu: #1c1e22;
+      --abu-muda: #2a2d33;
+    }
+
+    body {
+      background-color: var(--abu);
+      color: var(--putih);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--biru);
+      color: var(--putih);
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f0ff;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: var(--orange);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--putih);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffe0c0;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card,
+    .social-section {
+      background-color: var(--abu-muda);
+      border-left: 5px solid var(--biru);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .project-card:hover,
+    .social-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .project-card h2,
+    .social-section h2 {
+      color: var(--biru);
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      margin-top: 15px;
+      color: var(--orange);
+    }
+
+    .project-card p,
+    .project-card td {
+      margin-top: 8px;
+    }
+
+    .project-card h6 {
+      margin-top: 10px;
+      font-style: italic;
+      color: #aaa;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      text-decoration: none;
+      color: var(--putih);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: var(--biru);
+    }
+
+    .social-icons a:hover i {
+      color: var(--orange);
+    }
+
+    footer {
+      grid-column: 1/-1;
+      background-color: var(--orange);
+      color: var(--putih);
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kenalin aku Arya Mandala</h1>
+    <p>Ini hal tentang diriku</p>
+  </header>
+
+  <nav>
+    <a href="#hobi">Hobi</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#sosmed">Sosial Media</a>
+  </nav>
+
+  <main>
+    <section class="project-card" id="hobi">
+      <h2>Hobi</h2>
+      <h3>- Main Game</h3>
+      <p>Game yang selama ini aku mainkan adalah (Blockman Go, Mobile Legends, Roblox, Minecraft, COC, HSR, Catur, Guardian Tales).</p>
+
+      <h3>- Ngedit (Editing)</h3>
+      <p>Aku sangat hobi mengedit entah foto ataupun video, aplikasi yang kupakai selama ini sebagai editing adalah (Alight Motion, CapCut, KineMaster, Snapseed, IbisPaint X).</p>
+
+      <h3>- Menulis Cerita</h3>
+      <p>Aku suka membuat cerita, atau bisa dibilang novel. Hobi yang jarang kulakuin tapi sekalinya ada suatu cerita yang terngiang di atas kepala, bakal dibikin walau jarang dilanjutin.</p>
+
+      <h3>- Bermain Alat Musik</h3>
+      <p>Alat musik yang bisa kumainkan lumayan banyak walau kadang suka kaku, yaitu: (Pianika, Kalimba, Xylophone, Gitar, Tom, Bas, Sner, Kazoo).</p>
+      <h6>"Salah satu keinginanku dalam hobi bermain alat musik yaitu membuat band jika kesampaian."</h6>
+    </section>
+
+    <section class="project-card" id="pengalaman">
+      <h2>Sedikit Pengalaman</h2>
+      <h3>• Pengalaman Sekolah (SMP)</h3>
+      <p>Pernah mengikuti paskibra di sekolah, bergabung dalam OSIS, menjuarai lomba kelereng dan mendapat juara 1 berturut-turut, mengikuti ekstrakurikuler marching band dan menjadi pemain tom. Selain itu juga bisa memainkan alat musik seperti sner, bas, dan xylophone.</p>
+    </section>
+
+    <section class="social-section" id="sosmed">
+      <h2>Sosial Media / DLL</h2>
+      <div class="social-icons">
+        <a href="https://youtube.com/@arymandaa?si=vI8fWvcBgDKtTnVy"><i class="fab fa-youtube"></i>Channel YouTube</a>
+        <a href="https://youtube.com/@ary4mndaa?si=ROjh-N-Cq66CDBZh"><i class="fab fa-youtube"></i>Channel YouTube ke-2</a>
+        <a href="https://www.tiktok.com/@hataramou_arymandaa?_t=ZS-8yP4w0MXkpN&_r=1"><i class="fab fa-tiktok"></i>Akun TikTok</a>
+        <a href="https://www.instagram.com/arya_mandaa?igsh=NXYxNjhodmxzcW5v"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://www.instagram.com/4ryamandaa_?igsh=YzZ1NHdscGd2eTM1"><i class="fab fa-instagram"></i>Instagram ke-2</a>
+        <a href="https://discord.gg/uEcfBCRb"><i class="fab fa-discord"></i>Discord</a>
+        <a href="https://open.spotify.com/user/31l7gvkakes2xzj7at6sdgzv65jy?si=37ZamLj1QtWfdF0v94Acww"><i class="fab fa-spotify"></i>Spotify</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; Terima kasih sudah melihat tentang diriku.  
+    <p>どうもありがとうございます。😌</p>
+  </footer>
+
+</body>
+</html>
